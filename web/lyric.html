@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\lyric.css">
+</head>
+
+<body onload="openLyric()">
+
+    <div class="additional-div" id="addDiv">
+
+        <div class="lrcDiv" id="lrcDiv">
+            <div class="lrcList">
+                <li class="container"></li>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <audio id="audio-player">
+                <source src="audio\hhwq.mp3">
+            </audio>
+            <dl>
+                <dt title="查看歌词"><img src="img\houhuiwuqi.png" class="bottom-one"></dt>
+                <dd>后会无期-汪苏泷</dd>
+                <div class="bottom-two">
+                    <a href="#" title="喜欢"><img src="img\heart.svg" alt="喜欢"></a>
+                </div>
+                <div class="bottom-three">
+                    <a href="#" title="列表循环"><img src="img\repeat.svg" alt="列表循环"></a>
+                    <a href="#" title="上一首"><img src="img\play-skip-back.svg" alt="上一首"></a>
+                    <a href="#" title="播放"><img src="img\play-circle.svg" onclick="audioPlay()" alt="播放"
+                            id="PlayOrPaseu"></a>
+                    <a href="#" title="下一首"><img src="img\play-skip-forward.svg" alt="下一首"></a>
+                </div>
+            </dl>
+            <!-- 这是位于页面底部的div -->
+            <!-- 修改src的值修改音乐 -->
+            <!-- 播放进度条 -->
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </div>
+    </div>
+    <div class="back-div" onclick="simulateLinkClick('t1.html')">
+        <!-- 内容 -->
+        <img src="img\chevron-left.svg" alt="left image">
+    </div>
+    <script src="js\lyric.js"></script>
+</body>
+
+</html>

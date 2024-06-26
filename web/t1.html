@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css\styles.css">
+
+</head>
+
+
+<body onload="MarkCheck('forme')">
+
+    <div class="container">
+        <div class="left-entirety">
+            <img class="logo" src="img\wyy-fococlipping-standard.png" alt="">
+            <div class="for-me" id="forme" onclick="OnclickleftMe('forme')" onmouseover="MousInDiv('forme')"
+                onmouseout="MousOutDiv('forme')">
+                <img class="simage" src="img\heart.svg" alt="second image">
+                <div class="text">
+                    为我推荐
+                </div>
+            </div>
+            <div class="my-love" id="mylove" onclick="OnclickleftMe('mylove')" onmouseover="MousInDiv('mylove')"
+                onmouseout="MousOutDiv('mylove')">
+                <img class="simage" src="img\hert-fococlipping-standard.png" alt="second image">
+                <div class="text">
+                    我喜欢的音乐
+                </div>
+            </div>
+            <div class="my-collote" id="mycollote" onclick="OnclickleftMe('mycollote')"
+                onmouseover="MousInDiv('mycollote')" onmouseout="MousOutDiv('mycollote')">
+                <img class="simage" src="img\wujx-fococlipping-standard.png" alt="second image">
+                <div class="text">
+                    我的收藏
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-div" id="addDiv">
+            <!-- 这是在bottom-div和left-content之间位置的div -->
+            <div class="grid-container">
+                <div class="left-div" id="photo-container">
+                    <img src="img\wallhaven-1p2ojg.jpg" alt="photo1" style="width: 100%; height: 100%;">
+                    <img src="img\wallhaven-85eegj.jpg" alt="photo2" style="width: 100%; height: 100%;">
+                    <img src=" img\wallhaven-ex338w.jpg" alt="photo3" style="width: 100%; height: 100%;">
+                    <div class="div1" id="p1" onmouseover="cgePhoto('p1')" onmouseout="rePhoto('p1')">
+                    </div>
+                    <div class="div2" id="p2" onmouseover="cgePhoto('p2')" onmouseout="rePhoto('p2')">
+                    </div>
+                    <div class="div3" id="p3" onmouseover="cgePhoto('p3')" onmouseout="rePhoto('p3')">
+                    </div>
+                </div>
+                <div class="middle-div">
+                    <img src="img\fcrs.jpg" alt="photo1" style="width: 100%; height: 100%;">
+                </div>
+                <div class="right-div">
+                    <img src="img\nzsk.webp" alt="photo1" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <!-- 推荐音乐 -->
+            <div class="RecommendedMusic">
+                <p>推荐歌单</p>
+                <div class="SongList1">
+                    <img src="img\houhuiwuqi.png" alt="">
+                    <h3>每日推荐</h3>
+                    <div class="text" id="1-1" onmouseover="PopPu('1-1')" onmouseout="retraction('1-1')"
+                        onclick="SongList()">
+                        <h4>
+                            每日推荐 | 从 [从后会无期] 听起
+                        </h4>
+
+                        <p>
+                            1 后会无期
+                        </p>
+                        <p>
+                            2 烟火里的尘埃
+                        </p>
+                        <p>
+                            3 无聊人
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList2">
+                    <img src="img\woligudan.jpg" alt="">
+                    <div class="text" id="1-2" onmouseover="PopPu('1-2')" onmouseout="retraction('1-2')"
+                        onclick="SongList()">
+                        <h4>
+                            孤独的人习惯沉寂孤独
+                        </h4>
+
+                        <p>
+                            1 我离孤单几公里
+                        </p>
+                        <p>
+                            2 向阳而生
+                        </p>
+                        <p>
+                            3 当全世界忘了我
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList3">
+                    <img src="img\_xiwang.jpg" alt="">
+                    <div class="text" id="1-3" onmouseover="PopPu('1-3')" onmouseout="retraction('1-3')"
+                        onclick="SongList()">
+                        <h4>
+                            内娱的巴洛克摇滚
+                        </h4>
+
+                        <p>
+                            1 虚幻与现实
+                        </p>
+                        <p>
+                            2 斗牛
+                        </p>
+                        <p>
+                            3 Here We Are
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList4">
+                    <img src="img\kaximoduo.jpg" alt="">
+                    <div class="text" id="1-4" onmouseover="PopPu('1-4')" onmouseout="retraction('1-4')"
+                        onclick="SongList()">
+                        <h4>
+                            今天《卡西莫多的礼物》爱不释耳|私人雷达
+                        </h4>
+
+                        <p>
+                            1 卡西莫多的礼物
+                        </p>
+                        <p>
+                            2 恶魔的爱
+                        </p>
+                        <p>
+                            3 彩虹
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList5">
+                    <img src="img\gd.jpg" alt="">
+                    <div class="text" id="1-5" onmouseover="PopPu('1-5')" onmouseout="retraction('1-5')"
+                        onclick="SongList()">
+                        <h4>
+                            内心那片只想给她的净土
+                        </h4>
+
+                        <p>
+                            1 凄美地
+                        </p>
+                        <p>
+                            2 烟火里的尘埃
+                        </p>
+                        <p>
+                            3 行星
+                        </p>
+                    </div>
+                </div>
+                <p>精选歌单</p>
+                <div class="SongList2-1">
+                    <img src="img\hcy.jpg" alt="">
+                    <div class="text" id="2-1" onmouseover="PopPu('2-1')" onmouseout="retraction('2-1')"
+                        onclick="SongList()">
+                        <h4>
+                            [作曲: 火星人华晨宇]
+                        </h4>
+
+                        <p>
+                            1 虚幻与现实
+                        </p>
+                        <p>
+                            2 你要相信这不是最后一天
+                        </p>
+                        <p>
+                            3 好想爱这个世界啊(Live)
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList2-2">
+                    <img src="img\jay.jpg" alt="">
+                    <div class="text" id="2-2" onmouseover="PopPu('2-2')" onmouseout="retraction('2-2')"
+                        onclick="SongList()">
+                        <h4>
+                            华语老歌 | 8090后的经典
+                        </h4>
+
+                        <p>
+                            1 屋顶
+                        </p>
+                        <p>
+                            2 等一分钟
+                        </p>
+                        <p>
+                            3 十年
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList2-3">
+                    <img src="img\jj.jpg" alt="">
+                    <div class="text" id="2-3" onmouseover="PopPu('2-3')" onmouseout="retraction('2-3')"
+                        onclick="SongList()">
+                        <h4>
+                            林俊杰经典歌曲集合
+                        </h4>
+
+                        <p>
+                            1 美人鱼
+                        </p>
+                        <p>
+                            2 江南
+                        </p>
+                        <p>
+                            3 曹操
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList2-4">
+                    <img src="img\_xs1.jpg" alt="">" alt="">
+                    <div class="text" id="2-4" onmouseover="PopPu('2-4')" onmouseout="retraction('2-4')"
+                        onclick="SongList()">
+                        <h4>
+                            单曲循环 | 全网热播歌曲
+                        </h4>
+
+                        <p>
+                            1 素颜
+                        </p>
+                        <p>
+                            2 玫瑰花的葬礼
+                        </p>
+                        <p>
+                            3 断桥残雪
+                        </p>
+                    </div>
+                </div>
+                <div class="SongList2-5">
+                    <img src="img\_xzq.jpg" alt="">
+                    <div class="text" id="2-5" onmouseover="PopPu('2-5')" onmouseout="retraction('2-5')"
+                        onclick="SongList()">
+                        <h4>
+                            伤心频率 | 与你共鸣
+                        </h4>
+
+                        <p>
+                            1 演员
+                        </p>
+                        <p>
+                            2 陪你去流浪
+                        </p>
+                        <p>
+                            3 我好像在哪见过你
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 中间填充部分 -->
+        </div>
+
+        <div class="top-div">
+            <div class="back-div" id="backdiv" onclick="pageback()">
+                <img src="img\chevron-left.svg" alt="left image">
+            </div>
+            <div class="search-div">
+                <img src="img\search.svg" alt="search icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="avatar-div">
+                <img src="img\wallhaven-ex338w.jpg" alt="image" href="your-page-url">
+                <a>海上明月</a>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <audio id="audio-player" loop>
+                <source src="audio\hhwq.mp3" id="switchAudio">
+            </audio>
+            <dl>
+                <dt title="查看歌词"><img onclick="openLyric()" src="img\houhuiwuqi.png" class="bottom-one" id="bottom-one">
+                </dt>
+                <dd class="bottom-name" id="bottom-name">后会无期-汪苏泷</dd>
+                <div class="bottom-two">
+                    <a href="#" title="喜欢"><img src="img\heart.svg" alt="喜欢"></a>
+                </div>
+                <div class="bottom-three">
+                    <a href="#" title="列表循环"><img src="img\repeat.svg" alt="列表循环"></a>
+                    <a href="#" title="上一首"><img src="img\play-skip-back.svg" alt="上一首"></a>
+                    <a href="#" title="播放"><img src="img\play-circle.svg" onclick="audioPlay()" alt="播放"
+                            id="PlayOrPaseu"></a>
+                    <a href="#" title="下一首"><img src="img\play-skip-forward.svg" alt="下一首"></a>
+                </div>
+            </dl>
+            <!-- 这是位于页面底部的div -->
+            <!-- 修改src的值修改音乐 -->
+            <!-- 播放进度条 -->
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js\script.js"></script>
+</body>
+
+
+</html>

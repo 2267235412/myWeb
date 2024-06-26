@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\login.css">
+</head>
+
+<body>
+    <!-- 网易云登录页面 -->
+    <div class="header">
+        <img src="img\wyy-fococlipping-standard.png" alt="logo1" class="logo">
+    </div>
+    <div id="login">
+        <p>登录</p>
+    </div>
+    <div>
+        <div class="img">
+            <div class="img-1">
+                <img src="img\2.png" class="log-1">
+            </div>
+            <div class="login-container">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">手机号：</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">验证码：</label>
+                        <input type="password" id="password" name="password" required>
+                        <p class="code" id="code" onclick="sendCode('code')">发送验证码 <span id="countdown"></span></p>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button onclick="LogIn()">手机号登录/注册</button>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><img src="img\wx.png" class="log-2 log-3"><span class="log-4"><a
+                            href="https://open.weixin.qq.com/connect/qrconnect?appid=wxe280063f5fb2528a&response_type=code&redirect_uri=https://music.163.com/back/weichat&X-loginMethod=WeChat&forcelogin=true&scope=snsapi_login&state=iFvZGJlgUk&checkToken=9ca17ae2e6ffcda170e2e6eed8ae3ab1b29cccf73a8a968fb3c45b938b9eadd57f879fa0d7f37ba789fe84ce2af0feaec3b92ab7b49ab8b84eabf09dace24f878f9ba6d14b8d8efab7d83b918fa1d8b74382a7ee9e&lang=zh_CN#wechat_redirect">微信登录</a></span>
+                </li>
+                <li><img src="img\qq.png" class="log-2"><span class="log-6"><a
+                            href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100495085&response_type=code&redirect_uri=https://music.163.com/back/qq&X-loginMethod=QQ&forcelogin=true&state=gNGtosgLkM&checkToken=9ca17ae2e6ffcda170e2e6eed8ae3ab1b29cccf73a8a968fb3c45b938b9eadd57f879fa0d7f37ba789fe84ce2af0feaec3b92af8f585bae980ab9d83b2c94f979b8ea6d14a898bbea7c53c8894a785eb63a893ee9e">QQ登录</a></span>
+                </li>
+                <li><img src="img\wb.png" class="log-2"><span class="log-7"><a
+                            href="https://api.weibo.com/oauth2/authorize?client_id=301575942&response_type=code&redirect_uri=http://music.163.com/back/weibo&X-loginMethod=Weibo&forcelogin=true&scope=friendships_groups_read,statuses_to_me_read,follow_app_official_microblog&state=knGEZiyeiI&checkToken=9ca17ae2e6ffcda170e2e6eed8ae3ab1b29cccf73a8a968fb3c45b938b9eadd57f879fa0d7f37ba789fe84ce2af0feaec3b92a91b7b8d7d64e958aacb6ef5f938a9ea6c55f948ebbb7d8618595b6d9ed508eb1ee9e###">微博登录</a></span>
+                </li>
+                <li><img src="img\wyyx.png" class="log-2"><span class="log-8"><a href="#">网易邮箱账号登录</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="img-2">
+        <input type="checkbox" id="同意" name="同意" onclick="onclickAgreement()">
+        <label for="scales" id="agreement" onclick="">同意<span class="log-5">
+                《服务条款》《隐私政策》《儿童隐私政策》
+            </span></label>
+    </div>
+    <script src="js\login.js"></script>
+</body>
+
+</html>
